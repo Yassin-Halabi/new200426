@@ -1,0 +1,110 @@
+{
+  "name": "Employee",
+  "type": "object",
+  "properties": {
+    "full_name": {
+      "type": "string",
+      "title": "Full Name"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "title": "Email"
+    },
+    "phone": {
+      "type": "string",
+      "title": "Phone Number"
+    },
+    "company": {
+      "type": "string",
+      "enum": [
+        "Al Mithalia for Advanced Market Studies",
+        "Advanced Marketing Statistics"
+      ],
+      "title": "Company"
+    },
+    "department": {
+      "type": "string",
+      "title": "Department"
+    },
+    "position": {
+      "type": "string",
+      "title": "Position"
+    },
+    "employee_id": {
+      "type": "string",
+      "title": "Employee ID"
+    },
+    "join_date": {
+      "type": "string",
+      "format": "date",
+      "title": "Join Date"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Active",
+        "On Leave",
+        "Terminated",
+        "Probation"
+      ],
+      "title": "Status"
+    },
+    "base_salary": {
+      "type": "number",
+      "title": "Base Salary"
+    },
+    "annual_leave_balance": {
+      "type": "number",
+      "title": "Annual Leave Balance (Days)",
+      "default": 21
+    },
+    "max_annual_leave_days": {
+      "type": "number",
+      "title": "Max Annual Leave Days Per Year",
+      "default": 21
+    },
+    "nationality": {
+      "type": "string",
+      "title": "Nationality"
+    },
+    "national_id": {
+      "type": "string",
+      "title": "National ID / Iqama Number"
+    },
+    "bank_name": {
+      "type": "string",
+      "title": "Bank Name"
+    },
+    "iban": {
+      "type": "string",
+      "title": "IBAN"
+    },
+    "profile_photo": {
+      "type": "string",
+      "title": "Profile Photo"
+    },
+    "supervisor_email": {
+      "type": "string",
+      "title": "Direct Supervisor Email"
+    },
+    "supervisor_name": {
+      "type": "string",
+      "title": "Direct Supervisor Name"
+    },
+    "emergency_contact_name": {
+      "type": "string",
+      "title": "Emergency Contact Name"
+    },
+    "emergency_contact_phone": {
+      "type": "string",
+      "title": "Emergency Contact Phone"
+    }
+  },
+  "required": [
+    "full_name",
+    "company",
+    "position",
+    "status"
+  ]
+}

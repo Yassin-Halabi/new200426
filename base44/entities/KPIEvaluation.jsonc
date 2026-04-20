@@ -1,0 +1,58 @@
+{
+  "name": "KPIEvaluation",
+  "type": "object",
+  "properties": {
+    "kpi_id": {
+      "type": "string",
+      "title": "KPI ID"
+    },
+    "employee_id": {
+      "type": "string",
+      "title": "Employee ID"
+    },
+    "employee_name": {
+      "type": "string",
+      "title": "Employee Name"
+    },
+    "year": {
+      "type": "string",
+      "title": "Year"
+    },
+    "supervisor_score": {
+      "type": "number",
+      "title": "Supervisor Score (0-100)"
+    },
+    "supervisor_comment": {
+      "type": "string",
+      "title": "Supervisor Comment"
+    },
+    "hr_score": {
+      "type": "number",
+      "title": "HR Score (0-100)"
+    },
+    "hr_comment": {
+      "type": "string",
+      "title": "HR Comment"
+    },
+    "final_score": {
+      "type": "number",
+      "title": "Final Weighted Score"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Pending Supervisor",
+        "Pending HR",
+        "Completed"
+      ],
+      "title": "Status"
+    }
+  },
+  "required": [
+    "kpi_id",
+    "employee_id",
+    "employee_name",
+    "year",
+    "status"
+  ]
+}

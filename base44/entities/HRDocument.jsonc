@@ -1,0 +1,56 @@
+{
+  "name": "HRDocument",
+  "type": "object",
+  "properties": {
+    "employee_id": {
+      "type": "string",
+      "title": "Employee ID (Reference)"
+    },
+    "employee_name": {
+      "type": "string",
+      "title": "Employee Name"
+    },
+    "document_name": {
+      "type": "string",
+      "title": "Document Name"
+    },
+    "document_type": {
+      "type": "string",
+      "enum": [
+        "Contract",
+        "ID Copy",
+        "Offer Letter",
+        "Warning Letter",
+        "Salary Certificate",
+        "Experience Letter",
+        "Medical Report",
+        "Other"
+      ],
+      "title": "Document Type"
+    },
+    "file_url": {
+      "type": "string",
+      "title": "File URL"
+    },
+    "notes": {
+      "type": "string",
+      "title": "Notes"
+    },
+    "direction": {
+      "type": "string",
+      "enum": [
+        "Uploaded by Employee",
+        "Sent to Employee",
+        "Internal"
+      ],
+      "title": "Direction"
+    }
+  },
+  "required": [
+    "employee_id",
+    "employee_name",
+    "document_name",
+    "document_type",
+    "file_url"
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "name": "LeaveRequest",
+  "type": "object",
+  "properties": {
+    "employee_id": {
+      "type": "string",
+      "title": "Employee ID (Reference)"
+    },
+    "employee_name": {
+      "type": "string",
+      "title": "Employee Name"
+    },
+    "company": {
+      "type": "string",
+      "enum": [
+        "Al Mithalia for Advanced Market Studies",
+        "Advanced Marketing Statistics"
+      ],
+      "title": "Company"
+    },
+    "leave_type": {
+      "type": "string",
+      "enum": [
+        "Annual",
+        "Sick",
+        "Travel",
+        "Client Visit",
+        "Unpaid",
+        "Emergency",
+        "Maternity",
+        "Paternity"
+      ],
+      "title": "Leave Type"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date",
+      "title": "Start Date"
+    },
+    "end_date": {
+      "type": "string",
+      "format": "date",
+      "title": "End Date"
+    },
+    "days_count": {
+      "type": "number",
+      "title": "Number of Days"
+    },
+    "reason": {
+      "type": "string",
+      "title": "Reason"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Pending Supervisor",
+        "Pending HR",
+        "Approved",
+        "Rejected"
+      ],
+      "title": "Status"
+    },
+    "supervisor_status": {
+      "type": "string",
+      "enum": [
+        "Pending",
+        "Approved",
+        "Rejected"
+      ],
+      "title": "Supervisor Decision"
+    },
+    "supervisor_email": {
+      "type": "string",
+      "title": "Supervisor Email"
+    },
+    "supervisor_name": {
+      "type": "string",
+      "title": "Supervisor Name"
+    },
+    "supervisor_comment": {
+      "type": "string",
+      "title": "Supervisor Comment"
+    },
+    "hr_status": {
+      "type": "string",
+      "enum": [
+        "Pending",
+        "Approved",
+        "Rejected"
+      ],
+      "title": "HR Decision"
+    },
+    "hr_comment": {
+      "type": "string",
+      "title": "HR Comment"
+    },
+    "approved_by": {
+      "type": "string",
+      "title": "Final Approved By"
+    }
+  },
+  "required": [
+    "employee_id",
+    "employee_name",
+    "leave_type",
+    "start_date",
+    "end_date",
+    "days_count",
+    "status"
+  ]
+}

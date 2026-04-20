@@ -1,0 +1,128 @@
+{
+  "name": "PayrollRecord",
+  "type": "object",
+  "properties": {
+    "employee_id": {
+      "type": "string",
+      "title": "Employee ID (Reference)"
+    },
+    "employee_name": {
+      "type": "string",
+      "title": "Employee Name"
+    },
+    "company": {
+      "type": "string",
+      "enum": [
+        "Al Mithalia for Advanced Market Studies",
+        "Advanced Marketing Statistics"
+      ],
+      "title": "Company"
+    },
+    "month": {
+      "type": "string",
+      "title": "Month (YYYY-MM)"
+    },
+    "base_salary": {
+      "type": "number",
+      "title": "Basic Salary"
+    },
+    "transport_allowance": {
+      "type": "number",
+      "title": "Transportation Allowance",
+      "default": 0
+    },
+    "kpi_bonus": {
+      "type": "number",
+      "title": "KPI Bonus",
+      "default": 0
+    },
+    "salary_variance": {
+      "type": "number",
+      "title": "Salary Variance",
+      "default": 0
+    },
+    "other_allowances": {
+      "type": "number",
+      "title": "Other Allowances",
+      "default": 0
+    },
+    "total_due_salary": {
+      "type": "number",
+      "title": "Total Due Salary",
+      "default": 0
+    },
+    "social_security_employee": {
+      "type": "number",
+      "title": "Social Security - Employee (7.5%)",
+      "default": 0
+    },
+    "social_security_company": {
+      "type": "number",
+      "title": "Social Security - Company (14.25%)",
+      "default": 0
+    },
+    "income_tax": {
+      "type": "number",
+      "title": "Income Tax (Manual)",
+      "default": 0
+    },
+    "loan": {
+      "type": "number",
+      "title": "Loan Deduction",
+      "default": 0
+    },
+    "health_insurance": {
+      "type": "number",
+      "title": "Health Insurance",
+      "default": 0
+    },
+    "other_deductions": {
+      "type": "number",
+      "title": "Other Deductions",
+      "default": 0
+    },
+    "net_salary": {
+      "type": "number",
+      "title": "Net Salary"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Draft",
+        "Approved",
+        "Paid"
+      ],
+      "title": "Status"
+    },
+    "gm_approved": {
+      "type": "boolean",
+      "title": "GM Approved",
+      "default": false
+    },
+    "gm_approved_by": {
+      "type": "string",
+      "title": "GM Approved By"
+    },
+    "is_calculated": {
+      "type": "boolean",
+      "title": "Auto-Calculated",
+      "default": false
+    },
+    "calculation_batch": {
+      "type": "string",
+      "title": "Calculation Batch (YYYY-MM)"
+    },
+    "notes": {
+      "type": "string",
+      "title": "Notes"
+    }
+  },
+  "required": [
+    "employee_id",
+    "employee_name",
+    "month",
+    "base_salary",
+    "net_salary",
+    "status"
+  ]
+}

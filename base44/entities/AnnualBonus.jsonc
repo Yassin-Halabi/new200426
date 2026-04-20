@@ -1,0 +1,62 @@
+{
+  "name": "AnnualBonus",
+  "type": "object",
+  "properties": {
+    "employee_id": {
+      "type": "string",
+      "title": "Employee ID"
+    },
+    "employee_name": {
+      "type": "string",
+      "title": "Employee Name"
+    },
+    "company": {
+      "type": "string",
+      "enum": [
+        "Al Mithalia for Advanced Market Studies",
+        "Advanced Marketing Statistics"
+      ],
+      "title": "Company"
+    },
+    "year": {
+      "type": "string",
+      "title": "Year"
+    },
+    "kpi_score": {
+      "type": "number",
+      "title": "KPI Score (%)"
+    },
+    "base_salary": {
+      "type": "number",
+      "title": "Base Salary"
+    },
+    "bonus_amount": {
+      "type": "number",
+      "title": "Bonus Amount (JOD)"
+    },
+    "supervisor_notes": {
+      "type": "string",
+      "title": "Supervisor Notes"
+    },
+    "hr_notes": {
+      "type": "string",
+      "title": "HR Notes"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Draft",
+        "Approved",
+        "Paid"
+      ],
+      "title": "Status"
+    }
+  },
+  "required": [
+    "employee_id",
+    "employee_name",
+    "year",
+    "bonus_amount",
+    "status"
+  ]
+}

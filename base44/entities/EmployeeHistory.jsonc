@@ -1,0 +1,49 @@
+{
+  "name": "EmployeeHistory",
+  "type": "object",
+  "properties": {
+    "employee_id": {
+      "type": "string",
+      "title": "Employee ID"
+    },
+    "employee_name": {
+      "type": "string",
+      "title": "Employee Name"
+    },
+    "event_type": {
+      "type": "string",
+      "enum": [
+        "Promotion",
+        "Salary Change",
+        "Department Change",
+        "Warning",
+        "Commendation",
+        "Contract Renewal",
+        "Leave Taken",
+        "Bonus Paid",
+        "Other"
+      ],
+      "title": "Event Type"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "title": "Date"
+    },
+    "recorded_by": {
+      "type": "string",
+      "title": "Recorded By"
+    }
+  },
+  "required": [
+    "employee_id",
+    "employee_name",
+    "event_type",
+    "description",
+    "date"
+  ]
+}

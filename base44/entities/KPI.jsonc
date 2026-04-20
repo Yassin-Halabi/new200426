@@ -1,0 +1,41 @@
+{
+  "name": "KPI",
+  "type": "object",
+  "properties": {
+    "employee_id": {
+      "type": "string",
+      "title": "Employee ID"
+    },
+    "employee_name": {
+      "type": "string",
+      "title": "Employee Name"
+    },
+    "title": {
+      "type": "string",
+      "title": "KPI Title"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description"
+    },
+    "weight": {
+      "type": "number",
+      "title": "Weight (%)"
+    },
+    "year": {
+      "type": "string",
+      "title": "Year"
+    },
+    "target": {
+      "type": "string",
+      "title": "Target"
+    }
+  },
+  "required": [
+    "employee_id",
+    "employee_name",
+    "title",
+    "weight",
+    "year"
+  ]
+}
